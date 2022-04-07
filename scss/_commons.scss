@@ -1,0 +1,49 @@
+
+$primerColor:rgb(169, 217, 208);
+$segundoColor:rgba(2, 73, 89, 1.0);
+$tercerColor:rgb(13, 13, 13);
+
+*{
+	padding: 0;
+	margin: 0;
+}
+
+
+html{
+	font-size: 62.5%;
+}
+
+body{
+	background-image: url(../img/buscar.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+
+
+#contenedorIndex{
+	display: grid;
+	height: 100vh;
+	width: 100%;
+	grid-template-columns: 1fr;
+	grid-template-rows: 12vh 40vh 65vh 65vh 30vh 10vh;
+	grid-template-areas: "nav"
+						"header"
+						"main"
+						"section"
+						"mapa"
+						"footer" ;
+	
+}
+@media (min-width: 1024px){
+#contenedorIndex{
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: 12vh 50vh 90vh 30vh 10vh;
+	grid-template-areas: "nav nav"
+						"header header"
+						"main section"
+						"mapa mapa"
+						"footer footer";
+}
+}

@@ -1,0 +1,17 @@
+footer{
+	background: linear-gradient(to bottom,$segundoColor, $tercerColor);
+	grid-area: footer;
+	overflow: auto;
+	.pie{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+		.iconosRedes img{
+		height: 5rem;
+		&:hover{
+			transform: scale(1.2);
+			transition: all 1s;
+		}
+	}
+	}
+}

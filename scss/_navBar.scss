@@ -1,0 +1,51 @@
+.nav{
+	grid-area: nav;
+	top: 0;
+	position: sticky;
+	background: linear-gradient(to top, $primerColor, $segundoColor);
+	background-repeat: no-repeat;
+	background-size: cover;
+	z-index: 1;
+	overflow: hidden;
+	display: flex;
+	.logo{
+		box-sizing: border-box;
+		display: flex;
+		justify-content: flex-start;
+		&:hover{
+		transform: scale(1.2);
+		transition: all 1s;
+				}
+	}
+	ul{
+		display: flex;
+		justify-content: flex-end;
+		width: 90%;
+		align-items: center;
+		list-style: none;
+		box-sizing: border-box;
+		li a{
+			text-decoration: none;
+			margin-right: 1rem;
+			color: white;
+			font-size: $textSm;
+			font-family:$fontMain;
+			font-weight: 500;
+			box-sizing: border-box;
+			@media (min-width:768px){
+				font-size: $textMd;
+			}
+			&:hover{
+				color: gray;
+			}
+
+		}
+	}
+}
+
+header{
+	grid-area: header;
+	margin-top: 0.5rem;
+	overflow: hidden;
+}
+
