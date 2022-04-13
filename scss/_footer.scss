@@ -1,17 +1,16 @@
 footer{
-	background: linear-gradient(to bottom,$segundoColor, $tercerColor);
-	grid-area: footer;
-	overflow: auto;
+	background: linear-gradient(to bottom,map-get($map:$paleta,$key:'celeste'), map-get($map:$paleta,$key:'negro'));
+	height: 10vh;}
+
 	.pie{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-		.iconosRedes img{
-		height: 5rem;
-		&:hover{
-			transform: scale(1.2);
-			transition: all 1s;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		.iconosRedes{
+		img{
+		height: 3.5rem;
+		@extend .scale-hover;
+			}
 		}
 	}
-	}
-}
