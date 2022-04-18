@@ -7,7 +7,7 @@
 .container{
 	article{
 		@extend .rotateY;
-		h2{
+		h1{
 			@include texto($fontThird,$textLg,black);
 		}
 		p{
@@ -26,7 +26,7 @@
 main{
 	.parrafoNosotros{
 		@extend .rotateY;
-		h1{
+		h2{
 			@include texto($fontThird,3rem,black);
 			}
 		p{
@@ -50,6 +50,12 @@ form{
 	height: 30vh;
 }
 
+.boton{
+	font-size: 1.8rem;
+}
 
+.form-select{
+	@extend .boton
+}
 
 

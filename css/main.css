@@ -33,7 +33,7 @@ nav {
     color: white;
     margin-right: 1rem; }
 
-.container article h2 {
+.container article h1 {
   font-family: "Bebas Neue", cursive;
   font-size: 3rem;
   color: black; }
@@ -46,7 +46,7 @@ nav {
 .obras-sociales {
   height: 80vh; }
 
-main .parrafoNosotros h1 {
+main .parrafoNosotros h2 {
   font-family: "Bebas Neue", cursive;
   font-size: 3rem;
   color: black; }
@@ -66,6 +66,9 @@ form {
 
 .height {
   height: 30vh; }
+
+.boton, .form-select {
+  font-size: 1.8rem; }
 
 footer {
   background: linear-gradient(to bottom, rgba(169, 217, 208, 0.8), #0d0d0d);
