@@ -8,37 +8,36 @@
 	article{
 		@extend .rotateY;
 		h1{
-			@include texto($fontThird,$textLg,black);
+			@include texto($fontThird,$textLg,white);
 		}
 		p{
-			@include texto($fontMain,1.5rem,black);
+			@include texto($fontMain,1.5rem,white);
 			}
 		}
 }
 
 .obras-sociales{
-	height: 80vh;
+	height: 90vh;
 	img{
 		@extend .rotateY;
 	}
 }
 
-main{
-	.parrafoNosotros{
+.parrafoNosotros{
 		@extend .rotateY;
 		h2{
-			@include texto($fontThird,3rem,black);
+			@include texto($fontThird,3rem,white);
 			}
 		p{
-			@include texto($fontMain,1.5rem,black);
+			@include texto($fontMain,1.5rem,white);
 			}
 		}
 	
-}
+
 
 form{
 		@extend .rotateY;
-		@include texto($fontThird,2rem,black);
+		@include texto($fontThird,2rem,white);
 }
 
 

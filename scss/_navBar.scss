@@ -1,9 +1,8 @@
 nav{
 		background: linear-gradient(to top, map-get($map:$paleta,$key:'celeste'), map-get($map:$paleta,$key:'azul'));
-
-
+		
 		.scale-hover{
-			@extend .scale-hover
+			@extend .scale-hover;
 		}
 
 		.logo{
