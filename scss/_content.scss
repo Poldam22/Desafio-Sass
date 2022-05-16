@@ -4,16 +4,20 @@
 	}
 };
 
-.container{
-	article{
-		@extend .rotateY;
+.contenedor{
+	.pI{
+		padding: 3rem;
 		h1{
 			@include texto($fontThird,$textLg,white);
 		}
 		p{
 			@include texto($fontMain,1.5rem,white);
 			}
+		@extend .rotateY;
 		}
+	.video{
+		@extend .rotateY;
+	}
 }
 
 .obras-sociales{
@@ -24,7 +28,7 @@
 }
 
 .parrafoNosotros{
-		@extend .rotateY;
+		padding:3rem;
 		h2{
 			@include texto($fontThird,3rem,white);
 			}
@@ -32,8 +36,11 @@
 			@include texto($fontMain,1.5rem,white);
 			}
 		}
-	
 
+.pfNos{
+	@extend .rotateY;
+}
+	
 
 form{
 		@extend .rotateY;
